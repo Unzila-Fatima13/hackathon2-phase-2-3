@@ -1,55 +1,40 @@
-# [PROJECT_NAME] Constitution
-<!-- Example: Spec Constitution, TaskFlow Constitution, etc. -->
+<!-- SYNC IMPACT REPORT
+Version change: N/A -> 1.0.0
+Modified principles: N/A (new constitution)
+Added sections: All principles and sections based on user requirements
+Removed sections: N/A
+Templates requiring updates: ⚠ pending review of .specify/templates/plan-template.md, .specify/templates/spec-template.md, .specify/templates/tasks-template.md
+Follow-up TODOs: None
+-->
+# Full-Stack Web Application Constitution
 
 ## Core Principles
 
-### [PRINCIPLE_1_NAME]
-<!-- Example: I. Library-First -->
-[PRINCIPLE_1_DESCRIPTION]
-<!-- Example: Every feature starts as a standalone library; Libraries must be self-contained, independently testable, documented; Clear purpose required - no organizational-only libraries -->
+### Spec-Driven Development
+All development must follow Spec-Kit Plus spec-driven development methodology; No implementation without corresponding specifications under /specs; Implementation must strictly adhere to defined specs
 
-### [PRINCIPLE_2_NAME]
-<!-- Example: II. CLI Interface -->
-[PRINCIPLE_2_DESCRIPTION]
-<!-- Example: Every library exposes functionality via CLI; Text in/out protocol: stdin/args → stdout, errors → stderr; Support JSON + human-readable formats -->
+### Fixed Tech Stack Compliance
+Technology stack is FIXED and NON-NEGOTIABLE: Next.js 16+ App Router with TypeScript and Tailwind CSS for frontend; Python FastAPI with SQLModel ORM for backend; Neon Serverless PostgreSQL for persistence; Better Auth with JWT for authentication
 
-### [PRINCIPLE_3_NAME]
-<!-- Example: III. Test-First (NON-NEGOTIABLE) -->
-[PRINCIPLE_3_DESCRIPTION]
-<!-- Example: TDD mandatory: Tests written → User approved → Tests fail → Then implement; Red-Green-Refactor cycle strictly enforced -->
+### Full-Stack Implementation
+Backend and frontend must be developed together when required; Applications must support multi-user functionality with proper authentication; REST APIs must be secured with JWT tokens
 
-### [PRINCIPLE_4_NAME]
-<!-- Example: IV. Integration Testing -->
-[PRINCIPLE_4_DESCRIPTION]
-<!-- Example: Focus areas requiring integration tests: New library contract tests, Contract changes, Inter-service communication, Shared schemas -->
+### Agentic Dev Workflow
+Follow Agentic Dev Stack workflow: Read spec → Generate plan → Break into tasks → Implement iteratively; Always read relevant specs before implementing; Respect monorepo structure
 
-### [PRINCIPLE_5_NAME]
-<!-- Example: V. Observability, VI. Versioning & Breaking Changes, VII. Simplicity -->
-[PRINCIPLE_5_DESCRIPTION]
-<!-- Example: Text I/O ensures debuggability; Structured logging required; Or: MAJOR.MINOR.BUILD format; Or: Start simple, YAGNI principles -->
+### Monorepo Structure
+Respect monorepo architecture with proper separation of concerns; Maintain consistent code organization across frontend and backend; Follow established patterns for cross-cutting concerns
 
-### [PRINCIPLE_6_NAME]
+### No Manual Coding
+No manual coding by the user is allowed; All implementation must be performed through automated processes following specs; Human intervention limited to specification and review
 
+## Technology Constraints
+Frontend: Next.js 16+ App Router, TypeScript, Tailwind CSS; Backend: Python FastAPI; ORM: SQLModel; Database: Neon Serverless PostgreSQL; Auth: Better Auth with JWT verification; Repo Type: Monorepo
 
-[PRINCIPLE__DESCRIPTION]
-
-## [SECTION_2_NAME]
-<!-- Example: Additional Constraints, Security Requirements, Performance Standards, etc. -->
-
-[SECTION_2_CONTENT]
-<!-- Example: Technology stack requirements, compliance standards, deployment policies, etc. -->
-
-## [SECTION_3_NAME]
-<!-- Example: Development Workflow, Review Process, Quality Gates, etc. -->
-
-[SECTION_3_CONTENT]
-<!-- Example: Code review requirements, testing gates, deployment approval process, etc. -->
+## Development Workflow
+Strict adherence to Agentic Dev Stack workflow; All implementation must follow specs under /specs; Backend and frontend developed together when required; Code must be testable and maintainable
 
 ## Governance
-<!-- Example: Constitution supersedes all other practices; Amendments require documentation, approval, migration plan -->
+Constitution supersedes all other practices; All implementation must comply with specified tech stack and methodology; Amendments require formal documentation and approval; All changes must follow spec-driven approach
 
-[GOVERNANCE_RULES]
-<!-- Example: All PRs/reviews must verify compliance; Complexity must be justified; Use [GUIDANCE_FILE] for runtime development guidance -->
-
-**Version**: [CONSTITUTION_VERSION] | **Ratified**: [RATIFICATION_DATE] | **Last Amended**: [LAST_AMENDED_DATE]
-<!-- Example: Version: 2.1.1 | Ratified: 2025-06-13 | Last Amended: 2025-07-16 -->
+**Version**: 1.0.0 | **Ratified**: 2026-01-21 | **Last Amended**: 2026-01-21
