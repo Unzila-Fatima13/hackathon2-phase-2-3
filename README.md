@@ -124,3 +124,31 @@ All API endpoints are prefixed with `/api/`.
 
 ### Frontend (.env.local)
 - `NEXT_PUBLIC_API_URL` - Backend API URL
+
+## Vercel Deployment
+
+This application is configured for easy deployment on Vercel:
+
+1. Connect your GitHub repository to Vercel
+2. During project import, configure as follows:
+   - Build Command: `cd frontend && npm run build`
+   - Output Directory: `frontend/.next`
+   - Root Directory: `.` (project root)
+3. Vercel will automatically detect the Next.js application in the `frontend` directory
+4. No `vercel.json` file is needed for basic deployment
+
+### Environment Variables for Vercel Deployment
+
+You will need to set the following environment variables in your Vercel project settings:
+- `NEXT_PUBLIC_API_URL` - Set this to your backend API URL (can be deployed separately or use a proxy)
+
+### Deploying the Backend API
+
+The backend API needs to be deployed separately. You can:
+1. Deploy it to a cloud provider like AWS, Google Cloud, or Azure
+2. Use Railway or Render for Python/FastAPI applications
+3. Set the `NEXT_PUBLIC_API_URL` environment variable in Vercel to point to your deployed backend
+
+### Quick Deploy
+
+[![Deploy to Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/your-username/your-repo-name)

@@ -1,0 +1,29 @@
+{
+  "name": "fullstack-todo-app",
+  "version": "1.0.0",
+  "description": "Fullstack Todo Application with Task Chatbot Integration",
+  "scripts": {
+    "dev": "cd frontend && npm run dev",
+    "build": "cd frontend && npm run build",
+    "start": "cd frontend && npm run start",
+    "lint": "cd frontend && npm run lint",
+    "vercel-build": "cd frontend && npm install && npm run build"
+  },
+  "keywords": [
+    "todo",
+    "fullstack",
+    "nextjs",
+    "fastapi",
+    "chatbot"
+  ],
+  "author": "Todo App Developer",
+  "license": "MIT",
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=8.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/your-username/fullstack-todo-app.git"
+  }
+}
