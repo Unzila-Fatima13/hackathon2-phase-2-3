@@ -1,12 +1,3 @@
 {
-  "version": 2,
-  "builds": [
-    {
-      "src": "frontend/**/*",
-      "use": "@vercel/next",
-      "config": {
-        "rootDirectory": "frontend"
-      }
-    }
-  ]
+  "version": 2
 }
