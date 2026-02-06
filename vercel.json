@@ -1,8 +1,18 @@
 {
   "version": 2,
-  "framework": "nextjs",
-  "rootDirectory": "frontend",
-  "buildCommand": "cd ../ && npm run vercel-build",
-  "outputDirectory": "frontend/.next",
-  "installCommand": "cd ../ && npm install"
+  "builds": [
+    {
+      "src": "frontend/**/*",
+      "use": "@vercel/next",
+      "config": {
+        "rootDirectory": "frontend"
+      }
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "frontend/"
+    }
+  ]
 }
